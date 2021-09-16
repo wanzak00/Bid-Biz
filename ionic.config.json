@@ -1,0 +1,7 @@
+{
+  "name": "bid-biz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
