@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bid-biz": {
+      "hosting": {
+        "app": [
+          "bid-biz"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bid-biz"
+  }
+}

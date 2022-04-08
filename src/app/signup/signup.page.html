@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Register</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+      <!-- Company name -->
+      <ion-item>
+        <ion-label position="floating">Company Name</ion-label>
+        <ion-input type="text"></ion-input>
+        <!-- input red error thing here "This area need to be filled in" -->
+      </ion-item>
+
+      <!-- Registeration type -->
+      <ion-item>
+        <ion-label position="floating">Registeration Type</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="OCN">Old Company</ion-select-option>
+          <ion-select-option value="OBN">Old Business</ion-select-option>
+          <ion-select-option value="NCN">New Company</ion-select-option>
+          <ion-select-option value="NBN">New Business</ion-select-option>
+          <ion-select-option value="LLPN">LLP Number</ion-select-option>
+        </ion-select>
+        <!-- input red error thing here "Need to choose 1 choice" -->
+      </ion-item>
+
+      <!-- Registeration number  -->
+      <ion-item>
+        <ion-label position="floating">Registeration Number</ion-label>
+        <ion-input type="number"></ion-input>
+        <!-- input red error thing here "This area need to be filled in" -->
+      </ion-item>
+
+      <!-- Account type -->
+      <ion-item>
+        <ion-label position="floating">Account Type</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="seller">Seller</ion-select-option>
+          <ion-select-option value="buyer">Buyer</ion-select-option>
+        </ion-select>
+        <!-- input red error thing here "Need to choose 1 choice" -->
+      </ion-item>
+
+      <!-- login method -->
+      <form (ngSubmit)="signup()" [formGroup]="credentials">
+
+        <!-- Email address -->
+        <ion-item>
+          <ion-label position="floating"> Email Address</ion-label>
+          <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+          <!-- This is the error message that will be shown -->
+          <ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors">Email is invalid</ion-note>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item>
+          <ion-label position="floating"> Password</ion-label>
+          <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+          <!-- This is the error message that will be shown -->
+          <ion-note slot="error" *ngIf="(password.dirty || password.touched) && password.errors">Password needs to be 6 characters</ion-note>
+        </ion-item>
+      </form>
+
+      <!-- Confirm Password -->
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password"></ion-input>
+        <!-- input red error thing here -->
+      </ion-item>
+      <br>
+
+      <!-- Truth declaration -->
+      <ion-item>
+        <ion-text color="danger">
+          <h4 >I declare that every information that are stated in here are true.</h4>
+        </ion-text>
+        <!-- to check the box if it is true -->
+        <ion-checkbox slot = "start" value = "confirmation.isChecked"></ion-checkbox>
+      </ion-item>
+
+      <!-- register button -->
+      <section>
+        <ion-button type="button" expand="block" color="secondary" (click)="register()">Sign Up</ion-button>
+      </section>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

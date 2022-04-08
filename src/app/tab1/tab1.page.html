@@ -1,17 +1,92 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-button (click) = "logout()" slot = "end" fill="solid">
+      <ion-icon size = "small" name="log-out-outline"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <!-- Animated Searchbar -->
+      <ion-searchbar animated showCancelButton="focus"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
+  
+  <ion-item button (click)="dummyBuyer()" detail = "false">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/logo.PNG" alt="logo">
+      </ion-card-header>
+    
+      <ion-card-content>
+      <h1><b>Metal Wires 30M x 1000</b></h1>
+      <h2><b>RM 27,300.00</b></h2>
+      <h2><b>5 Bidders</b></h2>
+      <ion-text color="danger">
+      <h2><b>72h:32m:05s Left</b></h2>
+      </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item button (click)="dummy()" detail = "false">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/logo.PNG" alt="logo">
+      </ion-card-header>
+    
+      <ion-card-content>
+        <h1><b>Pure Copper Plate</b></h1>
+        <h2><b>RM 32,300.00</b></h2>
+        <h2><b>17 Bidders</b></h2>
+        <ion-text color="danger">
+        <h2><b>24h:30m:00s Left</b></h2>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+
+  <ion-item button (click)="dummy()" detail = "false">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/logo.PNG" alt="logo">
+      </ion-card-header>
+    
+      <ion-card-content>
+        <h1><b>Mahagony Log 10 Tons</b></h1>
+        <h2><b>RM 53,785.00</b></h2>
+        <h2><b>3 Bidders</b></h2>
+        <ion-text color="danger">
+        <h2><b>20h:12m:53s Left</b></h2>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+
+  <ion-item button (click)="dummy()" detail = "false">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/logo.PNG" alt="logo">
+      </ion-card-header>
+    
+      <ion-card-content>
+        <h1><b>Scrap Metals</b></h1>
+        <h2><b>RM 13,000.00</b></h2>
+        <h2><b>19 Bidders</b></h2>
+        <ion-text color="danger">
+        <h2><b>52h:15m:18s Left</b></h2>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="ScrollToTop()"> 
+      <ion-icon name="arrow-up-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>

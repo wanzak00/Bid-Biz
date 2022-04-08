@@ -1,17 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-button (click) = "logout()" slot = "end" fill="solid">
+      <ion-icon size = "small" name="log-out-outline"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Orders</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Metal wire</h2>
+        <h3>RM 23,000.00</h3>
+        <p>MetalWorks Sdn. Bhd</p>
+      </ion-label>
+      <ion-button (click)="checkout()" expand = "block">Pay</ion-button>
+    </ion-item>
+  </ion-list>
+  
 </ion-content>

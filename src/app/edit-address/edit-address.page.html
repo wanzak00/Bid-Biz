@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="my-address"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br><br>
+  Contact
+  <br>
+  <ion-item>
+    <ion-label position="floating">Full Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Phone Number</ion-label>
+    <ion-input type="Number"></ion-input>
+  </ion-item>
+
+  <br><br>
+  Address
+  <br>
+
+  <ion-item>
+    <ion-label position="floating">State,Area</ion-label>
+    <ion-select interface="popover">
+      <ion-select-option value="johor">Johor</ion-select-option>
+      <ion-select-option value="kedah">Kedah</ion-select-option>
+      <ion-select-option value="kelantan">Kelantan</ion-select-option>
+      <ion-select-option value="KL">Kuala Lumpur</ion-select-option>
+      <ion-select-option value="labuan">Labuan</ion-select-option>
+      <ion-select-option value="melaka">Melaka</ion-select-option>
+      <ion-select-option value="N9">Negeri Sembilan</ion-select-option>
+      <ion-select-option value="pahang">Pahang</ion-select-option>
+      <ion-select-option value="penang">Penang</ion-select-option>
+      <ion-select-option value="perak">Perak</ion-select-option>
+      <ion-select-option value="perlis">Perlis</ion-select-option>
+      <ion-select-option value="putrajaya">Putrajaya</ion-select-option>
+      <ion-select-option value="sabah">Sabah</ion-select-option>
+      <ion-select-option value="sarawak">Sarawak</ion-select-option>
+      <ion-select-option value="selangor">Selangor</ion-select-option>
+      <ion-select-option value="terengganu">Terengganu</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Postal Code</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Full Address</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-item>
+    <ion-text color="danger">
+      <h4 >I declare that every information that are stated in here are true.</h4>
+    </ion-text>
+    <ion-checkbox slot = "start" value = "confirmation.isChecked"></ion-checkbox>
+  </ion-item>
+  <section>
+    <ion-button href = "/my-address" expand = "block">SUBMIT</ion-button>
+  </section>
+</ion-content>

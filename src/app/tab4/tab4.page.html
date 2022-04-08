@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button (click) = "logout()" slot = "end" fill="solid">
+      <ion-icon size = "small" name="log-out-outline"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Wanzak</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-item button (click)="MyProfile()">
+    <ion-icon name="person"></ion-icon>
+    <ion-label>
+      My Profile
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="MyAddress()">
+    <ion-icon name="location"></ion-icon>
+    <ion-label>
+      My Address
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="Post()">
+    <ion-icon name="file-tray-full"></ion-icon>
+    <ion-label>
+      My Posts
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="MyWallet()">
+    <ion-icon name="wallet"></ion-icon>
+    <ion-label>
+      My Wallet
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="About()">
+    <ion-icon name="alert-circle"></ion-icon>
+    <ion-label>
+      About Bid-Biz
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="Help()">
+    <ion-icon name="help-circle"></ion-icon>
+    <ion-label>
+      Help
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="feedback()">
+    <ion-icon name="chatbubble-ellipses"></ion-icon>
+    <ion-label>
+      Give System Feedback
+    </ion-label>
+  </ion-item>
+  
+</ion-content>

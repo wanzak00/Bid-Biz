@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Manage Reports</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-list-header>
+        Reports
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>
+          <h2>I was scammed</h2>
+          <h3>Wanzak Sdn Bhd</h3>
+          <p>12346567-A</p>
+        </ion-label>
+        <ion-button (click)="viewReports()" expand = "block">View</ion-button>
+        <ion-button (click)="DeleteReports()" expand = "block">Delete</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <h2>This company is a scammer</h2>
+          <h3>IronWorks Bhd</h3>
+          <p>2345678-H</p>
+        </ion-label>
+        <ion-button (click)="viewReports()" expand = "block">View</ion-button>
+        <ion-button (click)="DeleteReports()" expand = "block">Delete</ion-button>
+      </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Manage Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-list-header>
+        Acceptance Request
+      </ion-list-header>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>AyamSegar Sdn Bhd</h2>
+          <h3>Company registration new number</h3>
+          <p>12346567-H</p>
+        </ion-label>
+        <ion-button (click)="Accept()" expand = "block">Accept User</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>Glass Maker Sdn Bhd</h2>
+          <h3>Company registration old number</h3>
+          <p>7654321-A</p>
+        </ion-label>
+        <ion-button (click)="Accept()" expand = "block">Accept User</ion-button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Accepted User
+      </ion-list-header>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>Wanzak Sdn Bhd</h2>
+          <h3>Company registration new number</h3>
+          <p>1234567-A</p>
+        </ion-label>
+        <ion-button (click)="Delete()" expand = "block">Delete User</ion-button>
+        <ion-button (click)="Blacklist()" expand = "block">Blacklist User</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>IronWroks Bhd</h2>
+          <h3>Company registration new number</h3>
+          <p>2345678-A</p>
+        </ion-label>
+        <ion-button (click)="Delete()" expand = "block">Delete User</ion-button>
+        <ion-button (click)="Blacklist()" expand = "block">Blacklist User</ion-button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Blacklisted User User
+      </ion-list-header>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>Scammer Sdn Bhd</h2>
+          <h3>Company registration new number</h3>
+          <p>1111111-H</p>
+        </ion-label>
+        <ion-button (click)="UnBlacklist()" expand = "block">Remove</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>Penipu Sdn Bhd</h2>
+          <h3>Company registration new number</h3>
+          <p>2222222-A</p>
+        </ion-label>
+        <ion-button (click)="UnBlacklist()" expand = "block">Remove</ion-button>
+      </ion-item>
+    </ion-list>
+</ion-content>
+

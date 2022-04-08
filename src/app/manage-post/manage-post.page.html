@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+  <ion-toolbar>
+    <!-- Animated Searchbar -->
+    <ion-searchbar animated showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item button (click)="postManage()">
+    <ion-label>
+      Metal Wires 30M x 1000
+    </ion-label>
+    <div>
+      RM 27,300.00<br>
+      5 bidders<br>
+      <ion-text color="danger">
+        72h:32m:05s Left
+      </ion-text>
+    </div>
+  </ion-item>
+
+  <ion-item button (click)="postManage()">
+    <ion-label>
+      Pure Copper Plate
+    </ion-label>
+    <div>
+      RM 32,300.00<br>
+      17 bidders<br>
+      <ion-text color="danger">
+        24h:30m:00s Left
+      </ion-text>
+    </div>
+  </ion-item>
+
+  <ion-item button (click)="postManage()">
+    <ion-label>
+      Scrap Metals
+    </ion-label>
+    <div>
+      RM 13,000.00<br>
+      19 bidders<br>
+      <ion-text color="danger">
+        52h:15m:18s Left
+      </ion-text>
+    </div>
+  </ion-item>
+  
+</ion-content>

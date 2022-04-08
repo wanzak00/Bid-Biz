@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/posts"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <img src="assets/logo.PNG" alt="logo">
+      <br>
+      <br>
+      <div class="ion-text-center">
+        <h1><b>Pure Copper Plate</b></h1>
+        <br><br>
+        <h1>Current price : RM 32,300.00</h1>
+        <br>
+      </div>
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-label><h2>Quotation</h2></ion-label>
+            <ion-button (click) = "presentActionSheet()">Select</ion-button>
+          </ion-item>
+          <ion-text color="danger">
+            *Must be lower than the current price.
+            <br>
+            *Min RM 100 lower.
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+      <div class = "ion-text-center">
+        <ion-text color = "danger">
+          24h:30m:00s Left
+        </ion-text>
+      </div>
+      <br>
+      <div>
+        <h1><b>Details: </b></h1>
+      </div>
+      Name: Pure Copper Plate<br>
+      Thickness: 3CM<br>
+      Width: 1 Meter<br>
+      Height: 1 Meter<br>
+      Quantity: 1000 Pieces<br>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

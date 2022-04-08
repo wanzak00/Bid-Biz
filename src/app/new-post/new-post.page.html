@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/posts"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Image</ion-label>
+    <ion-button>Choose Image</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Title</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Max Price</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Min bid change</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Duration</ion-label>
+    <ion-input type="time"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Item Description</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <br>
+  <section>
+    <ion-button (click)="login()" expand = "block">SUBMIT</ion-button>
+  </section>
+</ion-content>

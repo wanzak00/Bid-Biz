@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Manage Feedbacks</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-list-header>
+        Feedbacks
+      </ion-list-header>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>Updates</h2>
+          <h3>Wanzak Sdn Bhd</h3>
+          <p>12346567-A</p>
+        </ion-label>
+        <ion-button (click)="viewFeedback()" expand = "block">View</ion-button>
+        <ion-button (click)="DeleteReports()" expand = "block">Delete</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+        </ion-avatar>
+        <ion-label>
+          <h2>Improvements that can be implemented</h2>
+          <h3>IronWorks Bhd</h3>
+          <p>2345678-H</p>
+        </ion-label>
+        <ion-button (click)="viewFeedback()" expand = "block">View</ion-button>
+        <ion-button (click)="DeleteReports()" expand = "block">Delete</ion-button>
+      </ion-item>
+    </ion-list>
+</ion-content>

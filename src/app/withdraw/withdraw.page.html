@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/my-wallet"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label><h1>RM</h1></ion-label>
+      <ion-input placeholder="Input Withdrawal Amount" type="number"></ion-input>
+    </ion-item>
+
+
+    <ion-card-content>
+      <ion-button>
+        <ion-button (click)="withdrawSuccess()" expand = "block">Withdraw Now</ion-button>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
